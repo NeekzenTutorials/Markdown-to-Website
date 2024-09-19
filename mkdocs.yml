@@ -1,0 +1,6 @@
+site_name: 'Mon Site'
+theme:
+  name: 'material'
+
+nav:
+  - Home: index.md
