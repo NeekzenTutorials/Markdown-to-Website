@@ -42,11 +42,11 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#auteur">Auteur</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#contexte">Contexte</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#objectif">Objectif</a>
+    <li class="toctree-l2"><a class="reference internal" href="#auteurs">Auteurs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#documentation-hors-ligne">Documentation Hors Ligne</a>
     </li>
     </ul>
                 </li>
@@ -74,74 +74,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="preambule">Préambule</h2>
-<h3 id="auteur">Auteur</h3>
-<ul>
-<li>Fourny Nathan : Étudiant | Rédacteur du rapport d'analyse</li>
-</ul>
+                <h2 id="introduction">Introduction</h2>
 <h3 id="contexte">Contexte</h3>
-<p>Ce projet a été réalisé dans le cadre du module "Qualité Algorithmique | R5.04" du BUT informatique 3e Année.</p>
-<h3 id="objectif">Objectif</h3>
-<p>L'objectif de ce projet est d'analyser les performances des algorithmes de tri en Python. Pour cela, nous avons implémenté les algorithmes de tri suivants :
-- Tri par sélection
-- Tri par insertion
-- Tri rapide
-- Tri fusion</p>
-<p>Chaque tri ont été testé 100 fois sur des liste de 500 éléments allant de -100 à 100.</p>
-<h2 id="analyse">Analyse</h2>
-<h3 id="execution-primaire">Exécution primaire</h3>
+<p>Cpost est une application qui permet de convertir des fichiers au format .cpost en post HTML / PNG.
+Ce projet a vu le jour dans des contexte de gestion de projet où il était nécessaire de partager des informations de manière simple et rapide.
+Vous apprendrez ici comment installer, utiliser et comprendre Cpost.</p>
+<h3 id="auteurs">Auteurs</h3>
+<p>Nathan Fourny | Développement ; Rédaction de la documentation</p>
+<h3 id="documentation-hors-ligne">Documentation Hors Ligne</h3>
+<p>Vous pourrez retrouver le pdf de la documentation hors ligne ici : <a href="">Documentation Hors Ligne</a></p>
+<h2 id="telechargement">Téléchargement</h2>
+<h3 id="dependances">Dépendances</h3>
+<p>Pour pouvoir utiliser et faire fonctionner Cpost vous aurez besoin des outils suivant :  </p>
 <ul>
-<li>Tri par sélection</li>
+<li>Téléchargez <a href="https://wkhtmltopdf.org/downloads.html">wkhtmltoimage</a></li>
+<li>Assurez vous d'ajouter la variable d'environnement de wkhtmltoimage à votre PATH</li>
 </ul>
-<p>On remarque ici que l'exécution du tri par sélection est assez chaotique. On aperçoit de grande variation avec une médiane d'exécution à environ 0.0160s. </p>
-<p><img alt="tri_selection_1.png" src="img/tri_selection_1.png" /></p>
-<ul>
-<li>Tri par insertion</li>
-</ul>
-<p>Le tri par insertion est plus stable que le tri par sélection. Cependant on remarque que sa première exécution est plus lente que les suivantes. En effet sa première exécution dure environ 0.0125s alors qu'on peut situer sa médiane à environ 0.0110s.<br />
-On remarque également que vers le dernier tier des itérations, le temps d'execution devient de plus en plus court.</p>
-<p><img alt="tri_insertion_1.png" src="img/tri_insertion_1.png" /></p>
-<ul>
-<li>Tri rapide</li>
-</ul>
-<p>Dès le premier coup d'oeil on remarque que le tri rapide semble beaucoup plus rapide, performant et stable que les deux précédents.<br />
-Dans la quasi majorité des itérations on voit que le temps d'exécution est stable vers 0.001s.<br />
-Il est également très intéréssant de noter que certaines itérations sont très rapides et estimé à 0s d'exécution. soit instantané. Tandis que d'autres sont nettement plus longues que les autres. Cela peut être dû au changement de pivot que peut être mal fait ce qui fait que l'algorithme passe d'une complexité O(n log n) à O(n^2) dans le pire des cas.</p>
-<p><img alt="tri_rapide_1.png" src="img/tri_rapide_1.png" /></p>
-<ul>
-<li>Tri fusion</li>
-</ul>
-<p>Le tri fusion est également très différents des autres. On remarque que le premiers tier d'exécution de l'algorithme est beaucoup plus lent et instable que les deux autres tiers.<br />
-Cet algorithme n'est pas le plus rapide, il se place en seconde position derrière le tri rapide avec une médiane d'exécution à environ 0.005s après sa stabilisation.</p>
-<p><img alt="tri_fusion_1.png" src="img/tri_fusion_1.png" /></p>
-<h3 id="comparaison-des-tris">Comparaison des tris</h3>
-<ul>
-<li>tri par sélection vs tri par insertion</li>
-</ul>
-<p>En comparant les deux premiers tris les moins rapides (sélection et insertion), on remarque bien que le tri à insertion est à très grande majorité plus rapide que le tri par sélection.<br />
-Le tri par insertion semble ici plus stable que son concurrent même si les deux algorithmes restent assez chaotiques par rapport aux autres.</p>
-<p><img alt="tri_selection_insertion.png" src="img/tri_selection_insertion.png" /></p>
-<ul>
-<li>tri rapide vs tri fusion</li>
-</ul>
-<p>Dans ce comparatif entre les deux tris les plus rapide, on remarque bien que le tri rapide est beaucoup plus stable que son concurrent direct. Le tri fusion est beaucoup moins stable que le tri rapide avec de nombreuses variations de durée d'exécution entre chaque itération.<br />
-On remarque une nouvelle fois que les deux algorithmes ont de grandes zones de stabilité lors de l'exécution.</p>
-<p><img alt="tri_rapide_fusion.png" src="img/tri_rapide_fusion.png" /></p>
-<h3 id="comparaison-globales">Comparaison globales</h3>
-<ul>
-<li>L'évolution des tris avec des listes de plus en plus grandes</li>
-</ul>
-<p>Ici, on a comparé chaque tris sur une liste d'éléments de plus en plus grandes (en partant de 100 éléments à la base).<br />
-On remarque bien la différence de complexité entre les 4 algorithmes avec le tri par sélection qui est quadratique, le tri par insertion qui est linéaire et le tri fusion qui est logarithmique.<br />
-On remarque que le tri rapide est quasi-constant ici, ce qui est très intéréssant.</p>
-<p><img alt="tri_comparaison_supp.png" src="img/tris_comparaison_supp.png" /></p>
-<h2 id="conclusion">Conclusion</h2>
-<p>En conclusion, on peut dire que le tri rapide est le plus performant des 4 algorithmes testés. Il est le plus rapide et le plus stable même avec des listes de plus en plus grandes et il est le seul à avoir une complexité quasi-constante.</p>
-<p>Le tri fusion est également un bon algorithme de tri, mais il est moins performant que le tri rapide. Sa complexité logarithmique lui permet de trier des listes de plus en plus grandes en un temps relativement court ce qui le rend plus performant que les deux premiers tris.</p>
-<p>Le tri par insertion est un algorithme de tri correct, mais il est moins performant que les deux précédents.</p>
-<p>Le tri par sélection est le moins performant des 4 algorithmes testés. Bien qu'il soit le tri utilisé dans la grande majorité des cas par les humains, on se rend vite compte qu'il est très peu performant.</p>
-<p>Pour les 4 algorithmes ce sont après plusieurs itérations et des listes de plus en plus grandes qu'on peut identifier une réelle différences d'optimisation et de performance entre chacun.</p>
-<p>De manière générale, il est intéréssant de noter que chaque tri s'effectue en un temps relativement court. Contrairement à des tests réalisés sur des langages comme le C, les premières itérations de chaque tris ne sont pas spécialement plus longues que les suivantes. Cela est probablement dû à l'interprétation du code Python.</p>
+<h3 id="windows">Windows</h3>
+<p>Pour utiliser Cpost, rendez-vous sur le <a href="https://github.com/NeekzenTutorials/cposts-postcard-generator">github</a> du projet et téléchargez le projet zip de la branch main.  </p>
+<p>Décompressez le .zip dans un dossier de votre choix.  </p>
+<p>Ouvrez un terminal dans le dossier du projet et exécutez la commande suivante :  </p>
+<pre><code class="language-bash">pip install -r requirements.txt
+</code></pre>
               
             </div>
           </div><footer>
@@ -185,5 +139,5 @@ On remarque que le tri rapide est quasi-constant ici, ce qui est très intérés
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2024-09-20 12:45:47.433318+00:00
+Build Date UTC : 2024-09-20 12:59:55.143170+00:00
 -->

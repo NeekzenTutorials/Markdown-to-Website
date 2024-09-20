@@ -1,3 +1,5 @@
+# CPOST documentation
+
 ## Introduction
 
 ### Contexte
@@ -29,9 +31,10 @@ Pour utiliser Cpost, rendez-vous sur le [github](https://github.com/NeekzenTutor
 
 Décompressez le .zip dans un dossier de votre choix.  
 
-Ouvrez un terminal dans le dossier du projet et exécutez la commande suivante :  
+Ouvrez un terminal dans le dossier du projet et exécutez la commande suivante pour installer toutes les dépendances:  
 
 ```bash
 pip install -r requirements.txt
 ```
+
 
