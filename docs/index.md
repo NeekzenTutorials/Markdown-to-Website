@@ -37,4 +37,63 @@ Ouvrez un terminal dans le dossier du projet et exécutez la commande suivante p
 pip install -r requirements.txt
 ```
 
+Vous pouvez désormais exécuter le script transpileur.py.
+
+### Linux
+
+À définir
+
+### MacOS
+
+À définir
+
+### Extension .cpost sur VSCode
+
+Pour faciliter l'édition des fichiers .cpost, vous pouvez installer l'extension [.cpost](https://marketplace.visualstudio.com/items?itemName=Csquare.cpost) sur Visual Studio Code.
+
+L'extension est aussi disponible depuis l'onglet **Extension** directement sur Visual Studio Code.
+
+## Utilisation
+
+### Créer un fichier .cpost
+
+Pour créer un fichier .cpost, il vous suffit de créer un fichier texte et de le nommer avec l'extension .cpost.
+
+**Remarque: Il est conseillé d'utiliser le bloc note ou une IDE comme Visual Studio Code**
+
+### Syntaxe
+
+La syntaxe des fichiers .cpost est très simple. Voici un exemple de fichier .cpost :
+
+```cpost
+type: test
+#type: fix
+#type: post
+
+
+titre: Titre du post
+
+
+objet: Objet du post
+
+
+contexte: Contexte du post
+
+
+corps: Corps du post
+
+
+resultats: Résultats du post
+
+
+auteur: Auteur(s) du post
+```
+
+**Remarque: Vous pouvez retrouver un template.cpost dans le [github](https://github.com/NeekzenTutorials/cposts-postcard-generator) du projet**
+
+
+### Convertir un fichier .cpost
+
+
+
 
