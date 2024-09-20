@@ -1,6 +1,6 @@
-site_name: 'Mon Site'
+site_name: 'Cpost Wiki'
 theme:
-  name: 'material'
+  name: 'readthedocs'
 
 nav:
   - Home: index.md
