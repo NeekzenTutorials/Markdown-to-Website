@@ -8,6 +8,8 @@ Cpost est une application qui permet de convertir des fichiers au format .cpost 
 Ce projet a vu le jour dans des contexte de gestion de projet où il était nécessaire de partager des informations de manière simple et rapide.
 Vous apprendrez ici comment installer, utiliser et comprendre Cpost.
 
+![Cpost](./img/post.png)
+
 ### Auteurs
 
 Nathan Fourny | Développement ; Rédaction de la documentation
@@ -95,7 +97,9 @@ auteur: Auteur(s) du post
 ### Convertir un fichier .cpost
 
 Pour convertir un fichier .cpost en post HTML / PNG, il vous suffit d'exécuter le script transpileur.py.  
-Une fois lancé une petite application va apparaître. Vous pourrez sélectionner le fichier .cpost que vous souhaitez convertir.  
+Une fois lancé une petite application va apparaître. Vous pourrez sélectionner le fichier .cpost que vous souhaitez convertir.
+
+![Application](./img/application.png)
 
 Une fois sélectionné vous pouvez choisir le dossier de sauvegarde du post. Par défaut il crée un dossier "posts" dans le dossier du projet.  
 Vous pouvez finalement cliquer sur le bouton "Sauvegarder" pour générer le post.
