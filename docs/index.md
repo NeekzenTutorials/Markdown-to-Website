@@ -94,6 +94,10 @@ auteur: Auteur(s) du post
 
 ### Convertir un fichier .cpost
 
+Pour convertir un fichier .cpost en post HTML / PNG, il vous suffit d'exécuter le script transpileur.py.  
+Une fois lancé une petite application va apparaître. Vous pourrez sélectionner le fichier .cpost que vous souhaitez convertir.  
 
+Une fois sélectionné vous pouvez choisir le dossier de sauvegarde du post. Par défaut il crée un dossier "posts" dans le dossier du projet.  
+Vous pouvez finalement cliquer sur le bouton "Sauvegarder" pour générer le post.
 
 
